@@ -86,6 +86,12 @@ nav ul li a:hover::after{
     padding: 80px 0;
     
 }
+#about .container{
+background-image: url("Images/about.jpg");
+border-radius: 30px;
+background-size: 100% 100%;
+background-repeat: no-repeat;
+}
 .row{
     display: flex;
     justify-content: space-between;
@@ -172,16 +178,7 @@ transition:0.5s;
     position: relative;
     overflow: hidden;
 }
-.work h3{
-    font-size: 20px;
-    font-weight:600;
-    color:rgb(7, 27, 27);
-}
-.work p{
-    color:rgb(7, 27, 27);
-    font-weight:400;
-    font-size:18px;
-}
+
 .work img{
     width:100%;
     border-radius: 10px;
@@ -209,9 +206,11 @@ transition:0.5s;
     transition: height 0.5s;
 }
 .layer h3{
-    font-weight: 500;
+    
     margin-bottom:20px;
-
+    font-size: 20px;
+    font-weight:600;
+    color:rgb(17, 60, 60);
 }
 .layer a{
     margin-top:20px;
@@ -224,6 +223,11 @@ transition:0.5s;
     height:60px;
     border-radius:50%;
     text-align:center;
+}
+.layer p{
+    color:rgb(6, 44, 44);
+    font-weight:400;
+    font-size:18px;
 }
 .work:hover img{
   transform: scale(1.1);
