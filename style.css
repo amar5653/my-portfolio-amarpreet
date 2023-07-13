@@ -36,7 +36,7 @@ nav {
     
 }
 .logo{
-    width:120px;
+    width:max(50px,10vw);
     margin-top: 10px;
    margin-left:0px;
 }
@@ -316,7 +316,7 @@ form .btn-2{
     margin-top:20px;
     
 }
-.copyright p{
+.copyright address{
     font-size:18px;
   color:#fff;
 }
