@@ -5,9 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Portfolio</title>
     <link rel="stylesheet" type="text/css" href="style.css" media="screen"/>
-    
-
-    <script src="https://kit.fontawesome.com/7e22486cc7.js" crossorigin="anonymous"></script>
 </head>
 <body>
 
@@ -15,20 +12,19 @@
     <div id="header">
         <div class="container">
             <nav>
-                <img src="Images/amar.png" class="logo">
                 <ul id="sidemenu">
                     <li><a href="#header">Home</a></li>
                     <li><a href="#about">About</a></li>
                     <li><a href="#portfolio">Projects</a></li>
                     <li><a href="#contact">Contact</a></li>
-                    <i class="fa-solid fa-moon mode" ></i>
-                    <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+                  <li> <i class="fa-solid fa-moon" id="mode" onclick="theme()"></i></li> 
+                    <i class="fa-solid fa-xmark" onclick="closemenu()" id="menu"></i>
                 </ul>
-                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+                <i class="fa-solid fa-bars" onclick="openmenu()" id="bars"></i>
             </nav>
             <div class="header-text">
                 <img src="Images/professionalphoto.JPG" class="img-1">
-                <p>Web Developer</p>
+                <p>Front End Developer</p>
                 <h1>Hi, I am <span>Amarpreet</span></h1>
                 
             </div>
@@ -208,7 +204,7 @@
     const scriptURL = 'https://script.google.com/macros/s/AKfycbxlbTdeVJZ8kMgowkIa5ZjmrE8H2VZvuilVxnuWYBhqbuq9pZ6E4ZoBZ9xo0L03NGq8kw/exec'
     const form = document.forms['submit-to-google-sheet']
     const msg = document.getElementById("msg");
-    const mode = document.querySelector(".mode");
+    const mode = document.getElementById("mode");
 
     form.addEventListener('submit', e => {
       e.preventDefault()
@@ -225,7 +221,7 @@
         .catch(error => console.error('Error!', error.message))
     })
 
-    mode.onclick() = function() {
+    function theme() {
         if(mode.classList.contains("fa-moon")){
         mode.classList.remove("fa-moon");
         mode.classList.add("fa-sun");
@@ -237,5 +233,7 @@
         }
     }
   </script>
+      <script src="https://kit.fontawesome.com/7e22486cc7.js" crossorigin="anonymous"></script>
+    
 </body>
 </html>
